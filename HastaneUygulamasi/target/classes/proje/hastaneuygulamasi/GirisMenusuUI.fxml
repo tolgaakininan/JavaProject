@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proje.hastaneuygulamasi.GirisMenusuUIYoneticisi">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="496.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Dosya">
+            <items>
+              <MenuItem fx:id="kayitButon" mnemonicParsing="false" onAction="#kayitIslem" text="Kaydet" />
+                  <MenuItem fx:id="yukleButon" mnemonicParsing="false" onAction="#yukleIslem" text="Yükle" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Yardım">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Fonksiyonlar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="113.0" layoutY="70.0" prefHeight="51.0" prefWidth="306.0" text="HASTA YATAK REZERVASYONU UYGULAMASI" />
+      <ChoiceBox fx:id="secenekKutusu" layoutX="177.0" layoutY="168.0" prefWidth="150.0"/>
+   </children>
+</AnchorPane>
